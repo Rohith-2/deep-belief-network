@@ -4,7 +4,7 @@ from abc import ABCMeta
 import numpy as np
 import tensorflow.compat.v1 as tf
 from sklearn.base import ClassifierMixin, RegressorMixin
-
+tf.compat.v1.disable_eager_execution()
 from ..models import AbstractSupervisedDBN as BaseAbstractSupervisedDBN
 from ..models import BaseModel
 from ..models import BinaryRBM as BaseBinaryRBM
